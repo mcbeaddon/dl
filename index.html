@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -317,79 +318,87 @@
 <input class="global-search-bar" onkeyup="globalSearch(this.value)" placeholder="🔍 Search..." type="text"/>
 <!-- Clickable logo directing to the new link -->
 <a href="https://mcbeclient.github.io/dl/">
-  <img alt="Logo" class="logo" src="https://i.pinimg.com/736x/d3/1d/07/d31d07313f89289e06d6cae9a38d998e.jpg" tabindex="0"/>
+<img alt="Logo" class="logo" src="https://i.pinimg.com/736x/d3/1d/07/d31d07313f89289e06d6cae9a38d998e.jpg" tabindex="0"/>
 </a>
 <a class="lobby-link" href="https://yashofree.github.io/link/">
    Home
 </a>
 <div class="folder-container" id="mainSection">
-  <div class="folder-header">
-    <i class="fas fa-puzzle-piece"></i>
+<div class="folder-header">
+<i class="fas fa-puzzle-piece"></i>
     Addons
   </div>
-  <div class="clickable" onclick="showSection('packSection')">
-    <i class="fas fa-tools"></i>
+<div class="clickable" onclick="showSection('packSection')">
+<i class="fas fa-tools"></i>
     Utility
   </div>
-  <div class="clickable" onclick="showSection('androidSection')">
-    <i class="fas fa-film"></i>
+<div class="clickable" onclick="showSection('androidSection')">
+<i class="fas fa-film"></i>
     Anime
   </div>
-  <div class="clickable" onclick="showSection('windowsSection')">
-    <i class="fas fa-ghost"></i>
+<div class="clickable" onclick="showSection('windowsSection')">
+<i class="fas fa-ghost"></i>
     Horror
   </div>
-  <div class="clickable" onclick="showSection('iosSection')">
-    <i class="fas fa-crosshairs"></i>
+<div class="clickable" onclick="showSection('iosSection')">
+<i class="fas fa-crosshairs"></i>
     Weapons
   </div>
 </div>
 <!-- Hidden sections -->
 <div class="hidden-section" id="packSection">
-  <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-    <i class="fas fa-tools"></i>
-    <br/>
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+<i class="fas fa-tools"></i>
+<br/>
     Utility
   </header>
-  <input class="search-bar" onkeyup="sectionSearch(this.value, 'packSection')" placeholder="🔍 Search..." type="text"/>
-  <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-    <i class="fas fa-arrow-left"></i>
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'packSection')" placeholder="🔍 Search..." type="text"/>
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+<i class="fas fa-arrow-left"></i>
     Back
   </button>
 </div>
 <div class="hidden-section" id="androidSection">
-  <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-    <i class="fas fa-film"></i>
-    <br/>
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+<i class="fas fa-film"></i>
+<br/>
     Anime
   </header>
-  <input class="search-bar" onkeyup="sectionSearch(this.value, 'androidSection')" placeholder="🔍 Search..." type="text"/>
-  <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-    <i class="fas fa-arrow-left"></i>
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'androidSection')" placeholder="🔍 Search..." type="text"/>
+<div class="section">
+<div class="section-title">Naruto Craft V7</div>
+<a class="download-badge" href="https://www.mediafire.com/file/j7yd11kk0ti5f28/Naruto.mcaddon/file" target="_blank">
+<i class="fas fa-download"></i> Download
+  </a>
+<img alt="Naruto Craft V7" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/yNfF0u5Miws/maxresdefault.jpg"/>
+</div>
+
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+<i class="fas fa-arrow-left"></i>
     Back
   </button>
 </div>
 <div class="hidden-section" id="windowsSection">
-  <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-    <i class="fas fa-ghost"></i>
-    <br/>
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+<i class="fas fa-ghost"></i>
+<br/>
     Horror
   </header>
-  <input class="search-bar" onkeyup="sectionSearch(this.value, 'windowsSection')" placeholder="🔍 Search..." type="text"/>
-  <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-    <i class="fas fa-arrow-left"></i>
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'windowsSection')" placeholder="🔍 Search..." type="text"/>
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+<i class="fas fa-arrow-left"></i>
     Back
   </button>
 </div>
 <div class="hidden-section" id="iosSection">
-  <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-    <i class="fas fa-crosshairs"></i>
-    <br/>
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+<i class="fas fa-crosshairs"></i>
+<br/>
     Weapons
   </header>
-  <input class="search-bar" onkeyup="sectionSearch(this.value, 'iosSection')" placeholder="🔍 Search..." type="text"/>
-  <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-    <i class="fas fa-arrow-left"></i>
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'iosSection')" placeholder="🔍 Search..." type="text"/>
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+<i class="fas fa-arrow-left"></i>
     Back
   </button>
 </div>
