@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Addons</title>
-<style>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Addons</title>
+  <style>
     :root {
       --primary-color: #007BFF; /* Original blue theme */
       --secondary-color: #0056b3;
@@ -314,184 +313,248 @@
       }
     }
   </style>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-<script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
-<script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
+  <script>
     linkvertise(380136, {whitelist: [], blacklist: [""]});
   </script>
 </head>
 <body>
-<input class="global-search-bar" onkeyup="globalSearch(this.value)" placeholder="🔍 Search..." type="text"/>
-<!-- Clickable logo directing to the new link -->
-<a href="https://mcbeclient.github.io/dl/">
-<img alt="Logo" class="logo" src="https://i.pinimg.com/736x/d3/1d/07/d31d07313f89289e06d6cae9a38d998e.jpg" tabindex="0"/>
-</a>
-<a class="lobby-link" href="https://yashofree.github.io/link/">
+  <input class="global-search-bar" onkeyup="globalSearch(this.value)" placeholder="🔍 Search..." type="text"/>
+  <!-- Clickable logo directing to the new link -->
+  <a href="https://mcbeclient.github.io/dl/">
+    <img alt="Logo" class="logo" src="https://i.pinimg.com/736x/d3/1d/07/d31d07313f89289e06d6cae9a38d998e.jpg" tabindex="0"/>
+  </a>
+  <a class="lobby-link" href="https://yashofree.github.io/link/">
     Home
   </a>
-<div class="folder-container" id="mainSection">
-<div class="folder-header">
-<i class="fas fa-puzzle-piece"></i>
+  <div class="folder-container" id="mainSection">
+    <div class="folder-header">
+      <i class="fas fa-puzzle-piece"></i>
       Addons
     </div>
-<!-- New All button -->
-<div class="clickable" onclick="showAllItems()">
-<i class="fas fa-th"></i>
+    <!-- Existing clickable items -->
+    <div class="clickable" onclick="showAllItems()">
+      <i class="fas fa-globe"></i>
       All
     </div>
-<div class="clickable" onclick="showSection('packSection')">
-<i class="fas fa-tools"></i>
+    <div class="clickable" onclick="showSection('packSection')">
+      <i class="fas fa-tools"></i>
       Utility
     </div>
-<div class="clickable" onclick="showSection('androidSection')">
-<i class="fas fa-film"></i>
+    <div class="clickable" onclick="showSection('androidSection')">
+      <i class="fas fa-film"></i>
       Anime
     </div>
-<div class="clickable" onclick="showSection('windowsSection')">
-<i class="fas fa-ghost"></i>
+    <div class="clickable" onclick="showSection('windowsSection')">
+      <i class="fas fa-ghost"></i>
       Horror
     </div>
-<div class="clickable" onclick="showSection('iosSection')">
-<i class="fas fa-crosshairs"></i>
+    <div class="clickable" onclick="showSection('iosSection')">
+      <i class="fas fa-crosshairs"></i>
       Weapon
     </div>
-</div>
-<!-- Hidden sections -->
-<div class="hidden-section" id="packSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-<i class="fas fa-tools"></i>
-<br/>
+    <!-- New sections added as siblings -->
+    <div class="clickable" onclick="showSection('vehicleSection')">
+      <i class="fas fa-car"></i>
+      Vehicle
+    </div>
+    <div class="clickable" onclick="showSection('furnitureSection')">
+      <i class="fas fa-couch"></i>
+      Furniture
+    </div>
+    <div class="clickable" onclick="showSection('battleSection')">
+      <i class="fas fa-fist-raised"></i>
+      Battle
+    </div>
+    <div class="clickable" onclick="showSection('worldSection')">
+      <i class="fas fa-earth-americas"></i>
+      World
+    </div>
+    <div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
+      <i class="fas fa-shopping-cart"></i>
+      Marketplace
+    </div>
+  </div>
+  
+  <!-- Hidden sections for existing categories -->
+  <div class="hidden-section" id="packSection">
+    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+      <i class="fas fa-tools"></i>
+      <br/>
       Utility
     </header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'packSection')" placeholder="🔍 Search..." type="text"/>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i>
-      Back
+    <input class="search-bar" onkeyup="sectionSearch(this.value, 'packSection')" placeholder="🔍 Search..." type="text"/>
+    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+      <i class="fas fa-arrow-left"></i> Back
     </button>
-</div>
-<div class="hidden-section" id="androidSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-<i class="fas fa-film"></i>
-<br/>
+  </div>
+  <div class="hidden-section" id="androidSection">
+    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+      <i class="fas fa-film"></i>
+      <br/>
       Anime
     </header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'androidSection')" placeholder="🔍 Search..." type="text"/>
-<div class="section">
-<div class="section-title">Dandadan</div>
-<a class="download-badge" href="https://www.mediafire.com/file/8mk1fk9dcjt4zih/Dandadan.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
+    <input class="search-bar" onkeyup="sectionSearch(this.value, 'androidSection')" placeholder="🔍 Search..." type="text"/>
+    <div class="section">
+      <div class="section-title">Dandadan</div>
+      <a class="download-badge" href="https://www.mediafire.com/file/8mk1fk9dcjt4zih/Dandadan.mcaddon/file" target="_blank">
+        <i class="fas fa-download"></i> Download
       </a>
-<img alt="Dandadan" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/XjcnCtWuhyc/maxresdefault.jpg"/>
-</div>
-<div class="section">
-<div class="section-title">Shadow Samurai</div>
-<a class="download-badge" href="https://www.mediafire.com/file/1o3g65n3kh40m0p/shadow.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
+      <img alt="Dandadan" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/XjcnCtWuhyc/maxresdefault.jpg"/>
+    </div>
+    <div class="section">
+      <div class="section-title">Shadow Samurai</div>
+      <a class="download-badge" href="https://www.mediafire.com/file/1o3g65n3kh40m0p/shadow.mcaddon/file" target="_blank">
+        <i class="fas fa-download"></i> Download
       </a>
-<img alt="Shadow Samurai" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/j2saUaB-SK8/maxresdefault.jpg"/>
-</div>
-<div class="section">
-<div class="section-title">Dragon Ball</div>
-<a class="download-badge" href="https://www.mediafire.com/file/bv59h9cxjm2jjej/Dragon+Ball.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
+      <img alt="Shadow Samurai" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/j2saUaB-SK8/maxresdefault.jpg"/>
+    </div>
+    <div class="section">
+      <div class="section-title">Dragon Ball</div>
+      <a class="download-badge" href="https://www.mediafire.com/file/bv59h9cxjm2jjej/Dragon+Ball.mcaddon/file" target="_blank">
+        <i class="fas fa-download"></i> Download
       </a>
-<img alt="Dragon Ball" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/yAxdVN6LRmY/maxresdefault.jpg"/>
-</div>
-<div class="section">
-<div class="section-title">Naruto Craft V7</div>
-<a class="download-badge" href="https://www.mediafire.com/file/j7yd11kk0ti5f28/Naruto.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
+      <img alt="Dragon Ball" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/yAxdVN6LRmY/maxresdefault.jpg"/>
+    </div>
+    <div class="section">
+      <div class="section-title">Naruto Craft V7</div>
+      <a class="download-badge" href="https://www.mediafire.com/file/j7yd11kk0ti5f28/Naruto.mcaddon/file" target="_blank">
+        <i class="fas fa-download"></i> Download
       </a>
-<img alt="Naruto Craft V7" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/yNfF0u5Miws/maxresdefault.jpg"/>
-</div>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i>
-      Back
+      <img alt="Naruto Craft V7" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/yNfF0u5Miws/maxresdefault.jpg"/>
+    </div>
+    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+      <i class="fas fa-arrow-left"></i> Back
     </button>
-</div>
-<div class="hidden-section" id="windowsSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-<i class="fas fa-ghost"></i>
-<br/>
+  </div>
+  <div class="hidden-section" id="windowsSection">
+    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+      <i class="fas fa-ghost"></i>
+      <br/>
       Horror
     </header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'windowsSection')" placeholder="🔍 Search..." type="text"/>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i>
-      Back
+    <input class="search-bar" onkeyup="sectionSearch(this.value, 'windowsSection')" placeholder="🔍 Search..." type="text"/>
+    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+      <i class="fas fa-arrow-left"></i> Back
     </button>
-</div>
-<div class="hidden-section" id="iosSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-<i class="fas fa-crosshairs"></i>
-<br/>
+  </div>
+  <div class="hidden-section" id="iosSection">
+    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+      <i class="fas fa-crosshairs"></i>
+      <br/>
       Weapon
     </header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'iosSection')" placeholder="🔍 Search..." type="text"/>
-<div class="section">
-<div class="section-title">BattleCraft V2</div>
-<a class="download-badge" href="https://www.mediafire.com/file/l8sl03vtby1mu0h/BattleCraft2.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
-  </a>
-<img alt="BattleCraft V2" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/TZKayeXhyeI/maxresdefault.jpg"/>
-</div>
-
-<div class="section">
-<div class="section-title">Shadow Company V0.1</div>
-<a class="download-badge" href="https://www.mediafire.com/file/81yxvcajicqm637/Shadow+Company+V0.1.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
-  </a>
-<img alt="Shadow Company V0.1" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/a9Gv3bVRNtI/maxresdefault.jpg"/>
-</div>
-<div class="section">
-<div class="section-title">Timeless And Classic Zero</div>
-<a class="download-badge" href="https://www.mediafire.com/file/hzyqcs82zb6ue7r/Timeless_and_classic_zero_optifine.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
+    <input class="search-bar" onkeyup="sectionSearch(this.value, 'iosSection')" placeholder="🔍 Search..." type="text"/>
+    <div class="section">
+      <div class="section-title">BattleCraft V2</div>
+      <a class="download-badge" href="https://www.mediafire.com/file/l8sl03vtby1mu0h/BattleCraft2.mcaddon/file" target="_blank">
+        <i class="fas fa-download"></i> Download
       </a>
-<img alt="Timeless And Classic Zero" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/xhJdSY5HLoU/maxresdefault.jpg"/>
-</div>
-<div class="section">
-<div class="section-title">Radium's Armament v2.9</div>
-<a class="download-badge" href="https://mega.nz/file/jRwCUT7L#nPq2T9bRdhGd41s0F_5epO5chKNRSCp-VTHJV4OFLl4" target="_blank">
-<i class="fas fa-download"></i> Download
+      <img alt="BattleCraft V2" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/TZKayeXhyeI/maxresdefault.jpg"/>
+    </div>
+    <div class="section">
+      <div class="section-title">Shadow Company V0.1</div>
+      <a class="download-badge" href="https://www.mediafire.com/file/81yxvcajicqm637/Shadow+Company+V0.1.mcaddon/file" target="_blank">
+        <i class="fas fa-download"></i> Download
       </a>
-<img alt="Radium's Armament v2.9" class="preview-image" loading="lazy" src="https://d1wzdj81h1hubn.cloudfront.net/resources/93b0bc71b4a09dea.jpeg"/>
-</div>
-<div class="section">
-<div class="section-title">Radium's Armament v2.8</div>
-<a class="download-badge" href="https://mega.nz/file/OJBAUBYQ#JE_ywlfHxVaHaSf2WEcRVIOvbiEp0RBpL0JmSyw-WWg" target="_blank">
-<i class="fas fa-download"></i> Download
+      <img alt="Shadow Company V0.1" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/a9Gv3bVRNtI/maxresdefault.jpg"/>
+    </div>
+    <div class="section">
+      <div class="section-title">Timeless And Classic Zero</div>
+      <a class="download-badge" href="https://www.mediafire.com/file/hzyqcs82zb6ue7r/Timeless_and_classic_zero_optifine.mcaddon/file" target="_blank">
+        <i class="fas fa-download"></i> Download
       </a>
-<img alt="Radium's Armament v2.8" class="preview-image" loading="lazy" src="https://d1wzdj81h1hubn.cloudfront.net/resources/dd0d5c6237166e8d.jpeg"/>
-</div>
-<div class="section">
-<div class="section-title">Radium's Armament v2.7</div>
-<a class="download-badge" href="https://mega.nz/file/CUhUQDbD#iYhkrNAZWPMBxi3sNR_0tdb8sWlHDYL_nUlRFZwZxww" target="_blank">
-<i class="fas fa-download"></i> Download
+      <img alt="Timeless And Classic Zero" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/xhJdSY5HLoU/maxresdefault.jpg"/>
+    </div>
+    <div class="section">
+      <div class="section-title">Radium's Armament V2.9</div>
+      <a class="download-badge" href="https://mega.nz/file/jRwCUT7L#nPq2T9bRdhGd41s0F_5epO5chKNRSCp-VTHJV4OFLl4" target="_blank">
+        <i class="fas fa-download"></i> Download
       </a>
-<img alt="Radium's Armament v2.7" class="preview-image" loading="lazy" src="https://d1wzdj81h1hubn.cloudfront.net/resources/ea90855bf310bbba.jpeg"/>
-</div>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i>
-      Back
+      <img alt="Radium's Armament v2.9" class="preview-image" loading="lazy" src="https://d1wzdj81h1hubn.cloudfront.net/resources/93b0bc71b4a09dea.jpeg"/>
+    </div>
+    <div class="section">
+      <div class="section-title">Radium's Armament V2.8</div>
+      <a class="download-badge" href="https://mega.nz/file/OJBAUBYQ#JE_ywlfHxVaHaSf2WEcRVIOvbiEp0RBpL0JmSyw-WWg" target="_blank">
+        <i class="fas fa-download"></i> Download
+      </a>
+      <img alt="Radium's Armament v2.8" class="preview-image" loading="lazy" src="https://d1wzdj81h1hubn.cloudfront.net/resources/dd0d5c6237166e8d.jpeg"/>
+    </div>
+    <div class="section">
+      <div class="section-title">Radium's Armament V2.7</div>
+      <a class="download-badge" href="https://mega.nz/file/CUhUQDbD#iYhkrNAZWPMBxi3sNR_0tdb8sWlHDYL_nUlRFZwZxww" target="_blank">
+        <i class="fas fa-download"></i> Download
+      </a>
+      <img alt="Radium's Armament v2.7" class="preview-image" loading="lazy" src="https://d1wzdj81h1hubn.cloudfront.net/resources/ea90855bf310bbba.jpeg"/>
+    </div>
+    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+      <i class="fas fa-arrow-left"></i> Back
     </button>
-</div>
-<!-- New All Addons hidden section -->
-<div class="hidden-section" id="allSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-<i class="fas fa-th"></i>
-<br/>
+  </div>
+  
+  <!-- New hidden sections (all siblings) -->
+  <div class="hidden-section" id="vehicleSection">
+    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+      <i class="fas fa-car"></i>
+      <br/>
+      Vehicle
+    </header>
+    <input class="search-bar" onkeyup="sectionSearch(this.value, 'vehicleSection')" placeholder="🔍 Search..." type="text"/>
+    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+      <i class="fas fa-arrow-left"></i> Back
+    </button>
+  </div>
+  <div class="hidden-section" id="furnitureSection">
+    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+      <i class="fas fa-couch"></i>
+      <br/>
+      Furniture
+    </header>
+    <input class="search-bar" onkeyup="sectionSearch(this.value, 'furnitureSection')" placeholder="🔍 Search..." type="text"/>
+    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+      <i class="fas fa-arrow-left"></i> Back
+    </button>
+  </div>
+  <div class="hidden-section" id="battleSection">
+    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+      <i class="fas fa-fist-raised"></i>
+      <br/>
+      Battle
+    </header>
+    <input class="search-bar" onkeyup="sectionSearch(this.value, 'battleSection')" placeholder="🔍 Search..." type="text"/>
+    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+      <i class="fas fa-arrow-left"></i> Back
+    </button>
+  </div>
+  <div class="hidden-section" id="worldSection">
+    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+      <i class="fas fa-earth-americas"></i>
+      <br/>
+      World
+    </header>
+    <input class="search-bar" onkeyup="sectionSearch(this.value, 'worldSection')" placeholder="🔍 Search..." type="text"/>
+    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+      <i class="fas fa-arrow-left"></i> Back
+    </button>
+  </div>
+  
+  <!-- Existing All section -->
+  <div class="hidden-section" id="allSection">
+    <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+      <i class="fas fa-globe"></i>
+      <br/>
       All
     </header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'allSection')" placeholder="🔍 Search..." type="text"/>
-<!-- Container for merged items -->
-<div id="allItemsContainer"></div>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i>
-      Back
+    <input class="search-bar" onkeyup="sectionSearch(this.value, 'allSection')" placeholder="🔍 Search..." type="text"/>
+    <!-- Container for merged items -->
+    <div id="allItemsContainer"></div>
+    <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+      <i class="fas fa-arrow-left"></i> Back
     </button>
-</div>
-<script>
+  </div>
+  
+  <script>
     let searchTimeout;
     function globalSearch(query) {
       clearTimeout(searchTimeout);
