@@ -340,7 +340,7 @@
       All
     </div>
 <!-- New sections added as siblings -->
-<div class="clickable" onclick="showSection('packSection')"><i class="fas fa-tools"></i> Utilities</div><div class="clickable" onclick="showSection('androidSection')"><i class="fas fa-film"></i> Anime</div><div class="clickable" onclick="showSection('windowsSection')"><i class="fas fa-ghost"></i> Horror</div><div class="clickable" onclick="showSection('iosSection')"><i class="fas fa-crosshairs"></i> Weapons</div><div class="clickable" onclick="showSection('bossSection')"><i class="fas fa-skull"></i> Bosses</div><div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
+<div class="clickable" onclick="showSection('packSection')"><i class="fas fa-tools"></i> Utilities</div><div class="clickable" onclick="showSection('windowsSection')"><i class="fas fa-ghost"></i> Horror</div><div class="clickable" onclick="showSection('iosSection')"><i class="fas fa-crosshairs"></i> Weapons</div><div class="clickable" onclick="showSection('bossSection')"><i class="fas fa-skull"></i> Bosses</div><div class="clickable" onclick="showSection('androidSection')"><i class="fas fa-film"></i> Anime</div><div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
 <i class="fas fa-shopping-cart"></i>
       Marketplace
     </div>
@@ -545,51 +545,6 @@
 <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
 <i class="fas fa-arrow-left"></i> Back
     </button>
-</div><div class="hidden-section" id="androidSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-<i class="fas fa-film"></i>
-<br/>
-      Anime
-    </header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'androidSection')" placeholder="🔍 Search..." type="text"/>
-<div class="section">
-<div class="section-title">Kamen Rider Battle Craft</div>
-<a class="download-badge" href="https://www.mediafire.com/file/8esurq0u57fwqcv/Addon_Kamen_Rider_Battle_Craft.mcaddon/file?dkey=8esurq0u57fwqcv" target="_blank">
-<i class="fas fa-download"></i> Download
-  </a>
-<img alt="Kamen Rider Battle Craft" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/dhMQWWn9E3Q/maxresdefault.jpg"/>
-</div>
-<div class="section">
-<div class="section-title">Dandadan</div>
-<a class="download-badge" href="https://www.mediafire.com/file/8mk1fk9dcjt4zih/Dandadan.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
-      </a>
-<img alt="Dandadan" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/XjcnCtWuhyc/maxresdefault.jpg"/>
-</div>
-<div class="section">
-<div class="section-title">Shadow Samurai</div>
-<a class="download-badge" href="https://www.mediafire.com/file/1o3g65n3kh40m0p/shadow.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
-      </a>
-<img alt="Shadow Samurai" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/j2saUaB-SK8/maxresdefault.jpg"/>
-</div>
-<div class="section">
-<div class="section-title">Dragon Ball</div>
-<a class="download-badge" href="https://www.mediafire.com/file/bv59h9cxjm2jjej/Dragon+Ball.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
-      </a>
-<img alt="Dragon Ball" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/yAxdVN6LRmY/maxresdefault.jpg"/>
-</div>
-<div class="section">
-<div class="section-title">Naruto Craft V7</div>
-<a class="download-badge" href="https://www.mediafire.com/file/j7yd11kk0ti5f28/Naruto.mcaddon/file" target="_blank">
-<i class="fas fa-download"></i> Download
-      </a>
-<img alt="Naruto Craft V7" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/yNfF0u5Miws/maxresdefault.jpg"/>
-</div>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i> Back
-    </button>
 </div><div class="hidden-section" id="windowsSection">
 <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
 <i class="fas fa-ghost"></i>
@@ -768,7 +723,52 @@
 <img alt="Radium's Armament v2.7" class="preview-image" loading="lazy" src="https://d1wzdj81h1hubn.cloudfront.net/resources/ea90855bf310bbba.jpeg"/>
 </div><button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
 <i class="fas fa-arrow-left"></i> Back
-    </button></div><div class="hidden-section" id="bossSection"><header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;"><i class="fas fa-skull"></i><br/>Bosses</header><input class="search-bar" onkeyup="sectionSearch(this.value, 'bossSection')" placeholder="🔍 Search..." style="width: 60%; max-width: 300px; display: block; margin: 0 auto;" type="text"/><button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;"><i class="fas fa-arrow-left"></i> Back</button></div><div class="hidden-section" id="allSection">
+    </button></div><div class="hidden-section" id="bossSection"><header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;"><i class="fas fa-skull"></i><br/>Bosses</header><input class="search-bar" onkeyup="sectionSearch(this.value, 'bossSection')" placeholder="🔍 Search..." style="width: 60%; max-width: 300px; display: block; margin: 0 auto;" type="text"/><button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;"><i class="fas fa-arrow-left"></i> Back</button></div><div class="hidden-section" id="androidSection">
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+<i class="fas fa-film"></i>
+<br/>
+      Anime
+    </header>
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'androidSection')" placeholder="🔍 Search..." type="text"/>
+<div class="section">
+<div class="section-title">Kamen Rider Battle Craft</div>
+<a class="download-badge" href="https://www.mediafire.com/file/8esurq0u57fwqcv/Addon_Kamen_Rider_Battle_Craft.mcaddon/file?dkey=8esurq0u57fwqcv" target="_blank">
+<i class="fas fa-download"></i> Download
+  </a>
+<img alt="Kamen Rider Battle Craft" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/dhMQWWn9E3Q/maxresdefault.jpg"/>
+</div>
+<div class="section">
+<div class="section-title">Dandadan</div>
+<a class="download-badge" href="https://www.mediafire.com/file/8mk1fk9dcjt4zih/Dandadan.mcaddon/file" target="_blank">
+<i class="fas fa-download"></i> Download
+      </a>
+<img alt="Dandadan" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/XjcnCtWuhyc/maxresdefault.jpg"/>
+</div>
+<div class="section">
+<div class="section-title">Shadow Samurai</div>
+<a class="download-badge" href="https://www.mediafire.com/file/1o3g65n3kh40m0p/shadow.mcaddon/file" target="_blank">
+<i class="fas fa-download"></i> Download
+      </a>
+<img alt="Shadow Samurai" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/j2saUaB-SK8/maxresdefault.jpg"/>
+</div>
+<div class="section">
+<div class="section-title">Dragon Ball</div>
+<a class="download-badge" href="https://www.mediafire.com/file/bv59h9cxjm2jjej/Dragon+Ball.mcaddon/file" target="_blank">
+<i class="fas fa-download"></i> Download
+      </a>
+<img alt="Dragon Ball" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/yAxdVN6LRmY/maxresdefault.jpg"/>
+</div>
+<div class="section">
+<div class="section-title">Naruto Craft V7</div>
+<a class="download-badge" href="https://www.mediafire.com/file/j7yd11kk0ti5f28/Naruto.mcaddon/file" target="_blank">
+<i class="fas fa-download"></i> Download
+      </a>
+<img alt="Naruto Craft V7" class="preview-image" loading="lazy" src="https://img.youtube.com/vi/yNfF0u5Miws/maxresdefault.jpg"/>
+</div>
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+<i class="fas fa-arrow-left"></i> Back
+    </button>
+</div><div class="hidden-section" id="allSection">
 <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
 <i class="fas fa-globe"></i>
 <br/>
