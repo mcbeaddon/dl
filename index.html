@@ -340,7 +340,7 @@
       All
     </div>
 <!-- New sections added as siblings -->
-<div class="clickable" onclick="showSection('packSection')"><i class="fas fa-tools"></i> Utilities</div><div class="clickable" onclick="showSection('iosSection')"><i class="fas fa-crosshairs"></i> Weapons</div><div class="clickable" onclick="showSection('bossSection')"><i class="fas fa-skull"></i> Bosses</div><div class="clickable" onclick="showSection('androidSection')"><i class="fas fa-film"></i> Animes</div><div class="clickable" onclick="showSection('windowsSection')"><i class="fas fa-ghost"></i> Horrors</div><div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
+<div class="clickable" onclick="showSection('packSection')"><i class="fas fa-tools"></i> Utilities</div><div class="clickable" onclick="showSection('iosSection')"><i class="fas fa-crosshairs"></i> Weapons</div><div class="clickable" onclick="showSection('bossSection')"><i class="fas fa-skull"></i> Bosses</div><div class="clickable" onclick="showSection('androidSection')"><i class="fas fa-film"></i> Animes</div><div class="clickable" onclick="showSection('windowsSection')"><i class="fas fa-ghost"></i> Horrors</div><div class="clickable" onclick="showSection('testSection')"><i class="fas fa-globe"></i> Test</div><div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
 <i class="fas fa-shopping-cart"></i>
       Marketplace
     </div>
@@ -632,6 +632,13 @@
 </div>
 
 <div class="section">
+<div class="section-title">Monsterverse</div>
+<a class="download-badge" href="https://www.mediafire.com/file/19qhtb82jiod01a/Monsterverse+(Update).mcaddon/file" target="_blank">
+<i class="fas fa-download"></i> Download
+  </a>
+<img alt="Monsterverse" class="preview-image" loading="lazy" src="https://i.ibb.co/k6c6pfLk/photo-2025-03-02-23-32-13.jpg"/>
+</div>
+<div class="section">
 <div class="section-title">Kaiju Craft V3</div>
 <a class="download-badge" href="https://www.mediafire.com/file/2biyxyelwdphipb/Kaiju_craft_Adddon_bygojidraw_version3.mcaddon/file" target="_blank">
 <i class="fas fa-download"></i> Download
@@ -795,5 +802,17 @@
 <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
 <i class="fas fa-arrow-left"></i> Back
     </button>
+</div><div class="hidden-section" id="testSection" style="width: min(90%, 450px);">
+<style>
+#testSection .section .preview-image {
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+</style>
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,123,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;"><i class="fas fa-globe"></i><br/>Test</header>
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'testSection')" placeholder="🔍 Search..." style="width: 60%; max-width: 300px; display: block; margin: 0 auto;" type="text"/>
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;"><i class="fas fa-arrow-left"></i> Back</button>
 </div></body>
 </html>
